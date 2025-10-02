@@ -1,0 +1,19 @@
+# Node / JS
+node_modules/
+*.log
+dist/
+build/
+
+# Environment files
+medusa/.env
+medusa/.env.*
+medusa/package-lock.json
+medusa/yarn.lock
+
+payload/.env
+payload/.env.*
+payload/package-lock.json
+payload/yarn.lock
+
+# Optional: OS files
+.DS_Store
