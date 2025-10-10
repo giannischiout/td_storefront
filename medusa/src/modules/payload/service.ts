@@ -63,8 +63,6 @@ export default class PayloadModuleService {
   ): Promise<T> {
     const url = `${this.baseUrl}${endpoint}`;
 
-    console.log('option headers', options.headers)
-    console.log('this headers', this.headers)
     try {
       const response = await fetch(url, {
         ...options,

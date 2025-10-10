@@ -157,6 +157,10 @@ export interface Product {
    */
   title: string;
   /**
+   * The Test
+   */
+  test: string;
+  /**
    * Product subtitle
    */
   subtitle?: string | null;
@@ -374,6 +378,7 @@ export interface UsersSelect<T extends boolean = true> {
 export interface ProductsSelect<T extends boolean = true> {
   medusa_id?: T;
   title?: T;
+  test?: T;
   subtitle?: T;
   description?: T;
   thumbnail?: T;

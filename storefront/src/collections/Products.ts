@@ -34,6 +34,16 @@ export const Products: CollectionConfig = {
       },
     },
     {
+      name: 'test',
+      type: 'text',
+      label: 'Tesat',
+      required: true,
+      defaultValue: 'test',
+      admin: {
+        description: 'The Test',
+      },
+    },
+    {
       name: 'subtitle',
       type: 'text',
       label: 'Subtitle',
