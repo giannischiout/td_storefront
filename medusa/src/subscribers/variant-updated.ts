@@ -1,5 +1,5 @@
 import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework"
-import { updatePayloadProductVariantsWorkflow } from "../workflows/update-payload-product-variants"
+import { updatePayloadProductVariantsWorkflow } from "../workflows/payload-product/update-payload-product-variants"
 
 export default async function productVariantUpdatedHandler({
   event: { data },

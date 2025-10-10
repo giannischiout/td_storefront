@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32bce7bd-ab68-445f-9da7-2e655e93cdb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/medusa-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/medusa-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/api/middlewares.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/middlewares.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/modules/payload/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/modules/payload/service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storefront/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/storefront/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storefront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/storefront/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storefront/payload-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/storefront/payload-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storefront/src/app/(storefront)/[countryCode]/(main)/categories/[...category]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/storefront/src/app/(storefront)/[countryCode]/(main)/categories/[...category]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storefront/src/collections/Products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/storefront/src/collections/Products.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storefront/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/storefront/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/subscribers/variant-created.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/subscribers/variant-created.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/subscribers/variant-deleted.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/subscribers/variant-deleted.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "cleanup",
-    "last_opened_file_path": "C:/Users/d09288/WebstormProjects/performax",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\d09288\\WebstormProjects\\travelndo\\storefront\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;cleanup&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d09288/WebstormProjects/performax&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\d09288\\WebstormProjects\\travelndo\\storefront\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\d09288\WebstormProjects\travelndo\medusa\src\modules" />
@@ -93,6 +86,7 @@
       <workItem from="1759439423027" duration="6473000" />
       <workItem from="1759473170345" duration="9018000" />
       <workItem from="1759734222931" duration="616000" />
+      <workItem from="1760129403340" duration="83000" />
     </task>
     <servers />
   </component>
