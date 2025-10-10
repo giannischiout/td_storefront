@@ -1,49 +1,39 @@
-import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework"
-import { createPayloadProductsWorkflow } from "../workflows/create-payload-products"
+import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework";
+import { createPayloadProductsWorkflow } from "../workflows/payload-product/create-payload-products";
 
-export default async function productSyncPayloadHandler({
-  container,
-}: SubscriberArgs) {
-  const query = container.resolve("query")
+export default async function productSyncPayloadHandler({ container }: SubscriberArgs) {
+	const query = container.resolve("query");
 
-  const limit = 1000
-  let offset = 0
-  let count = 0
-  
-  do {
-    const { 
-      data: products,
-      metadata: { count: totalCount } = {}
-    } = await query.graph({
-      entity: "product",
-      fields: [
-        "id",
-        "metadata",
-      ],
-      pagination: {
-        take: limit,
-        skip: offset,
-      }
-    })
+	const limit = 1000;
+	let offset = 0;
+	let count = 0;
 
-    count = totalCount || 0
-    offset += limit
-    const filteredProducts = products.filter(product => !product.metadata?.payload_id)
+	do {
+		const { data: products, metadata: { count: totalCount } = {} } = await query.graph({
+			entity: "product",
+			fields: ["id", "metadata"],
+			pagination: {
+				take: limit,
+				skip: offset,
+			},
+		});
 
-    if (filteredProducts.length === 0) {
-      break
-    }
+		count = totalCount || 0;
+		offset += limit;
+		const filteredProducts = products.filter((product) => !product.metadata?.payload_id);
 
-    await createPayloadProductsWorkflow(container)
-      .run({
-        input: {
-          product_ids: filteredProducts.map(product => product.id),
-        }
-      })
+		if (filteredProducts.length === 0) {
+			break;
+		}
 
-  } while (count > offset + limit)
+		await createPayloadProductsWorkflow(container).run({
+			input: {
+				product_ids: filteredProducts.map((product) => product.id),
+			},
+		});
+	} while (count > offset + limit);
 }
 
 export const config: SubscriberConfig = {
-  event: "products.sync-payload",
-}
+	event: "products.sync-payload",
+};

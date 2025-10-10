@@ -4,7 +4,7 @@ import { authenticate, defineMiddlewares, validateAndTransformBody } from "@medu
 import { ConfigModule } from "@medusajs/framework";
 import { parseCorsOrigins } from "@medusajs/framework/utils";
 import cors from "cors";
-import { PostVendorCreateSchema } from "./admin/vendors/route";
+import { PostVendorCreateSchema } from "./vendors/route";
 
 export default defineMiddlewares({
 	routes: [

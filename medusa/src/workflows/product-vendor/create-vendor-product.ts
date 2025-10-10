@@ -1,5 +1,5 @@
 import { CreateProductWorkflowInputDTO } from "@medusajs/framework/types";
-import { createWorkflow } from "@medusajs/framework/workflows-sdk";
+import { createWorkflow, transform } from "@medusajs/framework/workflows-sdk";
 import { useQueryGraphStep } from "@medusajs/medusa/core-flows";
 
 type WorkflowInput = {
@@ -13,6 +13,16 @@ const createVendorProductWorkflow = createWorkflow("create-vendor-product", (inp
 		entity: "store",
 		fields: ["default_sales_channel_id"],
 	});
+
+	const productData = transform(
+		{
+			input,
+			stores,
+		},
+		(data) => {
+			console.log({ data });
+		}
+	);
 	console.log({ stores });
 });
 

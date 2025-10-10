@@ -1,20 +1,19 @@
-import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework"
-import { createPayloadProductOptionsWorkflow } from "../workflows/create-payload-product-options"
+import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework";
+import { createPayloadProductOptionsWorkflow } from "../workflows/payload-product/create-payload-product-options";
 
 export default async function productOptionCreatedHandler({
-  event: { data },
-  container,
+	event: { data },
+	container,
 }: SubscriberArgs<{
-  id: string
+	id: string;
 }>) {
-  await createPayloadProductOptionsWorkflow(container)
-    .run({
-      input: {
-        option_ids: [data.id],
-      }
-    })
+	await createPayloadProductOptionsWorkflow(container).run({
+		input: {
+			option_ids: [data.id],
+		},
+	});
 }
 
 export const config: SubscriberConfig = {
-  event: "product-option.created",
-}
+	event: "product-option.created",
+};
