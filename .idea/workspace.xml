@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bce7bd-ab68-445f-9da7-2e655e93cdb9" name="Changes" comment=":sparkles: create vendor product order">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/medusa-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/medusa-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/api/middlewares.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/middlewares.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/api/store/carts/[id]/complete-vendor/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/store/carts/[id]/complete-vendor/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/api/vendors/orders/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/vendors/orders/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/api/vendors/products/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/vendors/products/route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medusa/src/links/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/medusa/src/links/product-brand.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/medusa/src/links/provider-order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/links/vendor-order.ts" afterDir="false" />
@@ -21,12 +15,6 @@
       <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/migrations/Migration20251004092515.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/models/brand.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-admin/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-admin/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/create-vendor-orders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/create-vendor-orders.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/group-vendor-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/group-vendor-items.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +95,7 @@
       <workItem from="1759473170345" duration="9018000" />
       <workItem from="1759734222931" duration="616000" />
       <workItem from="1760129403340" duration="6535000" />
-      <workItem from="1760170937220" duration="9719000" />
+      <workItem from="1760170937220" duration="11335000" />
     </task>
     <task id="LOCAL-00001" summary=" folder structure">
       <option name="closed" value="true" />
@@ -117,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760129573108</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":sparkles: create vendor product order">
+      <option name="closed" value="true" />
+      <created>1760205855145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760205855145</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
