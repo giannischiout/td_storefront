@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32bce7bd-ab68-445f-9da7-2e655e93cdb9" name="Changes" comment="">
+    <list default="true" id="32bce7bd-ab68-445f-9da7-2e655e93cdb9" name="Changes" comment=":sparkles: create vendor product order">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/subscribers/variant-created.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/subscribers/variant-created.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medusa/src/subscribers/variant-deleted.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/subscribers/variant-deleted.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/medusa-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/medusa-config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/api/middlewares.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/middlewares.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/api/store/carts/[id]/complete-vendor/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/store/carts/[id]/complete-vendor/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/api/vendors/orders/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/vendors/orders/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/api/vendors/products/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/api/vendors/products/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/links/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/links/product-brand.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/links/provider-order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/links/vendor-order.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/links/provider-product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/links/vendor-product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/migrations/.snapshot-brand.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/migrations/Migration20251004092515.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/models/brand.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/modules/brand/service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-admin/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-admin/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/create-vendor-orders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/create-vendor-orders.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/group-vendor-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor-orders/steps/group-vendor-items.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/create-vendor/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medusa/src/workflows/vendor/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medusa/src/workflows/vendor/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +65,24 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;cleanup&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/d09288/WebstormProjects/performax&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d09288/WebstormProjects/travelndo/medusa/src/workflows/vendor&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\d09288\\WebstormProjects\\travelndo\\storefront\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\d09288\WebstormProjects\travelndo\medusa\src\workflows\vendor" />
       <recent name="C:\Users\d09288\WebstormProjects\travelndo\medusa\src\modules" />
       <recent name="C:\Users\d09288\WebstormProjects\travelndo\storefront" />
       <recent name="C:\Users\d09288\WebstormProjects\travelndo\storefront\src" />
       <recent name="C:\Users\d09288\WebstormProjects\travelndo\medusa" />
-      <recent name="C:\Users\d09288\WebstormProjects\travelndo\medusa\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\d09288\WebstormProjects\travelndo\medusa" />
@@ -86,11 +106,26 @@
       <workItem from="1759439423027" duration="6473000" />
       <workItem from="1759473170345" duration="9018000" />
       <workItem from="1759734222931" duration="616000" />
-      <workItem from="1760129403340" duration="83000" />
+      <workItem from="1760129403340" duration="6535000" />
+      <workItem from="1760170937220" duration="9719000" />
     </task>
+    <task id="LOCAL-00001" summary=" folder structure">
+      <option name="closed" value="true" />
+      <created>1760129573108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760129573108</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" folder structure" />
+    <MESSAGE value=":sparkles: create vendor product order" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: create vendor product order" />
   </component>
 </project>

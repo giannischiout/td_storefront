@@ -1,3 +1,10 @@
+# JetBrains / WebStorm / IntelliJ
+.idea/
+
+# VSCode
+.vscode/
+.cursor/
+
 # Node / JS
 node_modules/
 *.log

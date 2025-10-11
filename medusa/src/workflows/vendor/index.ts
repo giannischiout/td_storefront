@@ -1,7 +1,7 @@
 import { WorkflowResponse, createWorkflow, transform } from "@medusajs/framework/workflows-sdk";
 import { setAuthAppMetadataStep, useQueryGraphStep } from "@medusajs/medusa/core-flows";
-import createVendorStep from "./steps/create-vendor";
-import createVendorAdminStep from "./steps/create-vendor-admin";
+import createVendorStep from "./create-vendor";
+import createVendorAdminStep from "./create-vendor-admin";
 
 export type CreateVendorWorkflowInput = {
 	name: string;
@@ -25,7 +25,6 @@ const createVendorWorkflow = createWorkflow("create-vendor", function (input: Cr
 	const vendorAdminData = transform({ input, vendor }, (data) => {
 		return { ...data.input.admin, vendor_id: data.vendor.id };
 	});
-
 	const vendorAdmin = createVendorAdminStep(vendorAdminData);
 	setAuthAppMetadataStep({
 		authIdentityId: input.authIdentityId,

@@ -5,6 +5,7 @@ import { ConfigModule } from "@medusajs/framework";
 import { parseCorsOrigins } from "@medusajs/framework/utils";
 import cors from "cors";
 import { PostVendorCreateSchema } from "./vendors/route";
+import {AdminCreateProduct} from "@medusajs/medusa/api/admin/products/validators";
 
 export default defineMiddlewares({
 	routes: [
@@ -36,6 +37,13 @@ export default defineMiddlewares({
 		{
 			matcher: "/vendors/*",
 			middlewares: [authenticate("vendor", ["session", "bearer"])],
+		},
+		{
+			matcher: "/vendors/products",
+			method: ["POST"],
+			middlewares: [
+				validateAndTransformBody(AdminCreateProduct),
+			],
 		},
 	],
 });
