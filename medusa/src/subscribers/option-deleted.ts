@@ -1,5 +1,5 @@
 import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework";
-import { deletePayloadProductOptionsWorkflow } from "../workflows/payload-product/delete-payload-product-options";
+import {deletePayloadProductOptionsWorkflow} from "../workflows/payload-product";
 
 export default async function productOptionDeletedHandler({
 	event: { data },

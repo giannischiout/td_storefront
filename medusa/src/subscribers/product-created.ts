@@ -1,5 +1,5 @@
 import { SubscriberArgs, type SubscriberConfig } from "@medusajs/framework";
-import { createPayloadProductsWorkflow } from "../workflows/payload-product/create-payload-products";
+import {createPayloadProductsWorkflow} from "../workflows/payload-product";
 
 export default async function productCreatedHandler({
 	event: { data },
