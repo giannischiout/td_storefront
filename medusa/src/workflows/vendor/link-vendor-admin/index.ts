@@ -13,7 +13,7 @@ type CreateVendorAdminStepInput = {
 }
 
 const linkVendorAdminStep = createStep(
-	"create-vendor-admin-step",
+	"link-vendor-admin-step",
 	async (
 		adminData: CreateVendorAdminStepInput,
 		{ container }

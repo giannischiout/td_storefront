@@ -25,6 +25,8 @@ module.exports = defineConfig({
 		{
 			resolve: "./src/modules/vendor",
 		},
-
+		{
+			resolve: "./src/modules/booking",
+		},
 	],
 });

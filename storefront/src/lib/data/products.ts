@@ -68,7 +68,7 @@ export const listProducts = async ({
         },
         headers,
         next,
-        cache: "force-cache",
+        // cache: "force-cache",
       }
     )
     .then(({ products, count }) => {
@@ -93,7 +93,7 @@ export const listProductsWithSort = async ({
   page = 0,
   queryParams,
   sortBy = "created_at",
-  countryCode,
+  countryCode = 'gr',
 }: {
   page?: number
   queryParams?: HttpTypes.FindParams & HttpTypes.StoreProductParams

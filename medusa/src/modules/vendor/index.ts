@@ -5,4 +5,5 @@ export const VENDOR_MODULE = "vendor";
 
 export default Module(VENDOR_MODULE, {
 	service: VendorModuleService,
+
 });

@@ -1,7 +1,7 @@
 import { createWorkflow, transform, WorkflowResponse } from "@medusajs/framework/workflows-sdk";
 import { updateProductsWorkflow, useQueryGraphStep } from "@medusajs/medusa/core-flows";
 
-import { createPayloadItemsStep } from "../steps/create-payload-items";
+import { createPayloadItemsStep } from "./steps/create-payload-items";
 
 type WorkflowInput = {
 	product_ids: string[];

@@ -1,5 +1,5 @@
 import { AuthenticatedMedusaRequest, MedusaResponse } from "@medusajs/framework/http";
-import { MedusaError } from "@medusajs/framework/utils";
+import {ContainerRegistrationKeys, MedusaError} from "@medusajs/framework/utils";
 import { z } from "zod";
 
 import createVendorWorkflow, { CreateVendorWorkflowInput } from "../../workflows/vendor";
@@ -42,3 +42,20 @@ export const POST = async (req: AuthenticatedMedusaRequest<RequestBody>, res: Me
 		vendor: result.vendor,
 	});
 };
+
+
+export const GET = async (
+	req: AuthenticatedMedusaRequest,
+	res: MedusaResponse
+) => {
+	const query = req.scope.resolve(ContainerRegistrationKeys.QUERY)
+
+	const { data } = await query.graph({
+		entity: "vendor",
+		fields: ["id", "name", "handle", "logo", "admins*, admins.first_name"],
+		filters: {}, // optional, e.g., { name: "Acme" }
+	})
+	res.json({
+		data,
+	})
+}

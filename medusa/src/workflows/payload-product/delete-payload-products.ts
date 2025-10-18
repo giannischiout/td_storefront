@@ -1,6 +1,6 @@
 import { createWorkflow, transform, WorkflowResponse } from "@medusajs/framework/workflows-sdk";
 
-import { deletePayloadItemsStep } from "../steps/delete-payload-items";
+import { deletePayloadItemsStep } from "./steps/delete-payload-items";
 
 type WorkflowInput = {
 	product_ids: string[];

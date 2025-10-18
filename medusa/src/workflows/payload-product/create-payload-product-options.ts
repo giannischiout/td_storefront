@@ -2,7 +2,7 @@ import { createWorkflow, transform, when, WorkflowResponse } from "@medusajs/fra
 import { useQueryGraphStep } from "@medusajs/medusa/core-flows";
 
 import { PayloadCollectionItem, PayloadUpsertData } from "../../modules/payload/types";
-import { updatePayloadItemsStep } from "../steps/update-payload-items";
+import { updatePayloadItemsStep } from "./steps/update-payload-items";
 
 type WorkflowInput = {
 	option_ids: string[];
@@ -30,7 +30,7 @@ export const createPayloadProductOptionsWorkflow = createWorkflow(
 				const items: Record<string, PayloadUpsertData> = {};
 
 				data.productOptions.forEach((option) => {
-					const payloadProduct = option.product?.payload_product as PayloadCollectionItem;
+					const payloadProduct = (option.product as any)?.payload_product as PayloadCollectionItem;
 					if (!payloadProduct) return;
 
 					if (!items[payloadProduct.id]) {

@@ -1,6 +1,6 @@
 import { createStep, StepResponse } from "@medusajs/framework/workflows-sdk";
-import { PayloadUpsertData } from "../../modules/payload/types";
-import { PAYLOAD_MODULE } from "../../modules/payload";
+import { PayloadUpsertData } from "../../../modules/payload/types";
+import { PAYLOAD_MODULE } from "../../../modules/payload";
 
 type StepInput = {
   collection: string
